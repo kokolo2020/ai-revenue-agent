@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Example unverified task — NOT REAL",
+    "platform": "Algora",
+    "url": "https://example.com/fictional-task",
+    "reward_usd": 100,
+    "platform_fee_pct": 20,
+    "estimated_cost_usd": 5,
+    "estimated_win_probability": 0.25,
+    "funding_verified": null,
+    "issue_open_verified": null,
+    "no_competing_accepted_pr": null,
+    "ai_assistance_permitted": null,
+    "payout_eligible": null,
+    "scope_feasible": null
+  }
+]
