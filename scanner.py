@@ -6,7 +6,7 @@ import argparse,json,sys
 from urllib.parse import urlparse
 
 REQUIRED=("funding_verified","issue_open_verified","no_competing_accepted_pr","ai_assistance_permitted","payout_eligible","scope_feasible")
-def decision(job, cap=20):
+def decision(job, cap=500):
     reward=float(job.get("reward_usd",0)); fee=float(job.get("platform_fee_pct",0)); cost=float(job.get("estimated_cost_usd",0)); chance=float(job.get("estimated_win_probability",0))
     if not 0<=fee<=100 or not 0<=chance<=1 or reward<0 or cost<0 or cap<0:
         return {"decision":"REJECT","reason":"Invalid inputs"}
