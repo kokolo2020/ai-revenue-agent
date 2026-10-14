@@ -7,7 +7,7 @@ A **separate project from FLOP ComputePilot** for triaging coding bounties and o
 - Static dashboard for demo jobs, sample economics and status.
 - Import JSON candidate exports and deduplicate HTTPS URLs.
 - Conservative HOLD / REJECT / HUMAN_REVIEW_REQUIRED eligibility decisions.
-- $20 maximum estimated experiment cost per task (planning cap; not payment authorization).
+- $500 maximum estimated investment per opportunity for evaluation only; every expense requires explicit approval.
 - Netlify static hosting via `netlify.toml`.
 
 ## Run the scanner
@@ -17,7 +17,7 @@ python3 scanner.py examples.json
 python3 -m unittest -v test_scanner.py
 ```
 
-The scanner **does not discover live bounties** by itself. You must supply candidates and independently verify funding, issue status, competing pull requests, platform AI-assistance rules, payout eligibility and feasibility. Unknown verification flags result in HOLD. Estimated win probabilities are assumptions. Even a positive score requires human approval.
+The dashboard searches public GitHub issues live, but results are NOT verified funded bounties. The Python scanner **does not discover live bounties** by itself. You must supply candidates and independently verify funding, issue status, competing pull requests, platform AI-assistance rules, payout eligibility and feasibility. Unknown verification flags result in HOLD. Estimated win probabilities are assumptions. Even a positive score requires human approval.
 
 ## Deployment
 
